@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>네이버 : 회원가입</title>
+
+    <link href="css/naver_singup_css.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>
+                <a href="http://www.naver.com" class="h_logo"></a>
+            </h1>
+        </div>
+
+        <form id="join" method="post">
+            <div id="content">
+                <div class="content_row">
+                    <div id="inrow1" class="h4_content">
+                        <h3><label for="userId">아이디</label></h3>
+                        <span class="inputBox">
+                            <input type="text" id="userId" name="id" class="input necessary" maxlength="20">
+                            <span class="inText">
+                                <label for="userId">@naver.com</label>
+                            </span>
+                        </span>
+                        <h4></h4>
+                    </div>
+                    <div id="inrow2" class="h4_content">
+                        <h3><label for="userPw">비밀번호</label></h3>
+                        <span class="inputBox"><input type="password" id="userPw" name="pw" class="input necessary" maxlength="20">
+                            <label for="userPw">
+                                <span class="inText pwimg">
+                                    <p id="pwtext">안전</p>
+                                </span>
+                            </label>
+                        </span>
+                        <h4></h4>
+                    </div>
+                    <div id="inrow3" class="h4_content">
+                        <h3><label for="userPw2">비밀번호 재확인</label></h3>
+                        <span class="inputBox"><input type="password" id="userPw2" class="input necessary" maxlength="20">
+                            <label for="userPw2">
+                                <span class="inText pwimg2"></span>
+                            </label>
+                        </span>
+                        <h4></h4>
+                    </div>
+                </div>
+
+                <div class="content_row2">
+                    <div id="inrow4" class="h4_content">
+                        <h3><label for="name">이름</label></h3>
+                        <span class="inputBox"><input type="text" id="name" name="name" class="input necessary" maxlength="40"></span>
+                        <h4></h4>
+                    </div>
+                    <div id="inrow5" class="h4_content">
+                        <h3><label for="y">생년월일</label></h3>
+                        <div id="birthBox">
+                            <span class="inputBox bir">
+                                <input type="text" id="y" name="y" class="input" placeholder="년(4자)" aria-label="년(4자)" maxlength="4">
+                            </span>
+                            <span class="inputBox bir">
+                                <select id="m" aria-label="월" class="input">
+                                    <option value="">월</option>
+                                </select>
+                            </span>
+                            <span class="inputBox bir">
+                                <input type="text" id="d" name="d" class="input" placeholder="일" aria-label="일" maxlength="2">
+                            </span>
+                        </div>
+                        <h4></h4>
+                    </div>
+
+                    <div id="inrow6" class="h4_content">
+                        <h3><label for="gender">성별</label></h3>
+                        <span class="inputBox">
+                            <select id="gender" name="gender" aria-label="성별" class="input necessary">
+                                <option value="" selected>성별</option>
+                                <option value="male">남자</option>
+                                <option value="female">여자</option>
+                            </select>
+                        </span>
+                        <h4></h4>
+                    </div>
+                    <div id="inrow7" class="h4_content">
+                        <h3><label for="email">본인 확인 이메일<span class="sel">(선택)</span></label></h3>
+                        <span class="inputBox"><input type="text" id="email" name="email" class="input" placeholder="선택입력"></span>
+                        <h4></h4>
+                    </div>
+                </div>
+
+                <div class="content_row3 h4_content">
+                    <h3><label for="telNum">휴대전화</label></h3>
+                    <span class="inputBox">
+                        <select id="country" name="country" class="input">
+                            <option value="82" selected>대한민국 +82</option>
+                        </select>
+                    </span>
+
+                    <div id="inputTel">
+                        <span class="inputBox tel">
+                            <input type="tel" id="telNum" name="telNum" class="input necessary" placeholder="전화번호 입력">
+                        </span>
+                        <input type="button" value="인증번호 받기" class="btn_type" id="btn_type2">
+                    </div>
+
+                    <div id="inputTel2">
+                        <span class="inputBox telNum2"><input type="text" id="in" name="in" class="input telNum2" placeholder="인증번호 입력하세요" disabled></span>
+
+                    </div>
+                    <h4></h4>
+
+                </div>
+
+                <input type="submit" value="가입하기" class="btn_type" id="btn_type">
+
+            </div>
+
+        </form>
+
+        <div id="footer">
+            <ul>
+                <li class="righttbar"><a href="#">이용약관</a></li>
+                <li class="righttbar"><strong><a href="#">개인정보처리방침</a></strong></li>
+                <li class="righttbar"><a href="#">책임의 한계와 법적고지</a></li>
+                <li><a href="#">단체 회원 가입</a></li>
+            </ul>
+
+            <adress>
+                <p>
+                    <a href="http://www.naver.com" class="logo_small"></a>
+                </p>
+                <p>
+                    Copyright
+                </p>
+                <p>
+                    <strong>NAVER Corp.</strong>
+                </p>
+                <p>
+                    All Rights Reserved.
+                </p>
+
+            </adress>
+        </div>
+
+
+
+    </div>
+    <script src="js/naver_singup_js.js"></script>
+</body></html>
