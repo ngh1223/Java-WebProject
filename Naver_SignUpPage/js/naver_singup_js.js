@@ -161,7 +161,6 @@ $(document).ready(function () {
         $.each(restric, function (index, item) {
             submit += item;
             if (item == 0) {
-                alert(index);
                 $('#' + index).closest('.h4_content').find('h4').html('필수 정보입니다.').css('color', 'red');
             };
         });
