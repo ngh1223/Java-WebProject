@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	height: 50px;
+	border-bottom: 1px solid #DDD;
+}
+
+#header>h2 {
+	line-height: 50px;
+}
+
+#nav {
+	padding: 0 20px;
+	height: 30px;
+	border-bottom: 1px solid #DDD;
+}
+
+#nav>ul {
+	overflow: hidden;
+}
+
+#nav>ul>li {
+	list-style: none;
+	float: left;
+	padding: 0 15px;
+	line-height: 30px;
+}
+
+#contents{
+	padding: 30px;
+}
+hr{
+	border: 0;
+	border-bottom: 1px solid #DDD;
+	margin: 20px 0;
+}
+
+#footer {
+	border: 1px solid #DDD;
+	padding: 20px;
+}
